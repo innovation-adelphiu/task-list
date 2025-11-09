@@ -6,6 +6,7 @@
 <title>Task List</title>
 <style> 
     body  { font-family: system-ui, Arial, sans-serif; margin: 40px; background: white; color:#222; }
+    #container { width: 600px; }
     .row { display: flex; gap: 8px; align-items: stretch; }
 
     #taskInputArea { flex: 1; min-height: 36px; padding: 8px; border-radius:4px; font-size: 1rem; resize: vertical; }
@@ -30,12 +31,13 @@
 <body>
   <h1>Task List</h1>
 
-  <div class="row">
-    <textarea id="taskInputArea" placeholder="Type something..."></textarea>
-    <button id="taskAddButton" title="Add">➕</button>
+  <div id="container">
+    <div class="row">
+        <textarea id="taskInputArea" placeholder="Type something..."></textarea>
+        <button id="taskAddButton" title="Add">➕</button>
+    </div>
+    <div id="taskListArea"></div>
   </div>
-
-  <div id="taskListArea"></div>
 
 <script>
 const taskInputArea = document.getElementById('taskInputArea');
