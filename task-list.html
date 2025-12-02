@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="https://cdn.jsdelivr.net/gh/innovation-adelphiu/info-button@main/info-button.js"></script>
+<script src="task-list.js" defer></script>
+<link rel="stylesheet" href="task-list.css">
+
+<title>Task List</title>
+<style> 
+    body  { display: flex; flex-direction: column; align-items:center; font-family: system-ui, Arial, sans-serif; margin: 40px; background: #f0f0ff; color:#222; }
+</style>
+</head>
+
+<body>
+  <h1>Task List</h1>
+
+  <div id="taskContainer">
+    <div id="taskAddRow">
+        <textarea id="taskInputArea" placeholder="Type something..."></textarea>
+        <button id="taskAddButton" title="Add">➕</button>
+    </div>
+    <div id="taskListArea"></div>
+  </div>
+
+</body>
+</html>
